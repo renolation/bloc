@@ -45,4 +45,11 @@ void main() {
       expect(result, equals(tJson));
     });
   });
+  group('copy with', (){
+    test('should return new object', (){
+      final result = tModel.copyWith(name: 'new name');
+      expect(result.name, equals('new name'));
+    });
+  });
+
 }
