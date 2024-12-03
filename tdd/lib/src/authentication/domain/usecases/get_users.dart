@@ -1,8 +1,8 @@
 
 
-import 'package:bloc/core/usecase/usecase.dart';
-import 'package:bloc/core/utils/typedef.dart';
-import 'package:bloc/src/authentication/domain/entities/user.dart';
+import 'package:bloc_test/core/usecase/usecase.dart';
+import 'package:bloc_test/core/utils/typedef.dart';
+import 'package:bloc_test/src/authentication/domain/entities/user.dart';
 
 import '../repositories/authentication_repository.dart';
 

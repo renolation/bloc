@@ -1,9 +1,9 @@
 import 'dart:convert';
 
-import 'package:bloc/core/errors/exceptions.dart';
-import 'package:bloc/core/utils/constants.dart';
-import 'package:bloc/src/authentication/data/datasources/authentication_remote_data_source.dart';
-import 'package:bloc/src/authentication/data/models/user_model.dart';
+import 'package:bloc_test/core/errors/exceptions.dart';
+import 'package:bloc_test/core/utils/constants.dart';
+import 'package:bloc_test/src/authentication/data/datasources/authentication_remote_data_source.dart';
+import 'package:bloc_test/src/authentication/data/models/user_model.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
 import 'package:http/http.dart' as http;

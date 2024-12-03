@@ -1,6 +1,6 @@
 import 'dart:convert';
 
-import 'package:bloc/src/authentication/domain/entities/user.dart';
+import 'package:bloc_test/src/authentication/domain/entities/user.dart';
 
 import '../../../../core/utils/typedef.dart';
 
