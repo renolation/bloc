@@ -1,7 +1,7 @@
 
-import 'package:bloc_test/core/usecase/usecase.dart';
-import 'package:bloc_test/core/utils/typedef.dart';
-import 'package:bloc_test/src/authentication/domain/repositories/authentication_repository.dart';
+import 'package:bloc_demo/core/usecase/usecase.dart';
+import 'package:bloc_demo/core/utils/typedef.dart';
+import 'package:bloc_demo/src/authentication/domain/repositories/authentication_repository.dart';
 import 'package:equatable/equatable.dart';
 
 class CreateUser extends UseCaseWithParams<void, CreateUserParams>{

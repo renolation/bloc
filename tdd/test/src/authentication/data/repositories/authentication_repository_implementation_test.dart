@@ -1,8 +1,8 @@
-import 'package:bloc_test/core/errors/exceptions.dart';
-import 'package:bloc_test/core/errors/failure.dart';
-import 'package:bloc_test/src/authentication/data/datasources/authentication_remote_data_source.dart';
-import 'package:bloc_test/src/authentication/data/repositories/authentication_repository_implementation.dart';
-import 'package:bloc_test/src/authentication/domain/entities/user.dart';
+import 'package:bloc_demo/core/errors/exceptions.dart';
+import 'package:bloc_demo/core/errors/failure.dart';
+import 'package:bloc_demo/src/authentication/data/datasources/authentication_remote_data_source.dart';
+import 'package:bloc_demo/src/authentication/data/repositories/authentication_repository_implementation.dart';
+import 'package:bloc_demo/src/authentication/domain/entities/user.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';

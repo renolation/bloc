@@ -1,5 +1,5 @@
 import 'package:bloc/bloc.dart';
-import 'package:bloc_test/src/authentication/domain/usecases/create_user.dart';
+import 'package:bloc_demo/src/authentication/domain/usecases/create_user.dart';
 import 'package:equatable/equatable.dart';
 
 import '../../../../core/errors/failure.dart';

@@ -1,5 +1,5 @@
-import 'package:bloc_test/src/authentication/domain/repositories/authentication_repository.dart';
-import 'package:bloc_test/src/authentication/domain/usecases/create_user.dart';
+import 'package:bloc_demo/src/authentication/domain/repositories/authentication_repository.dart';
+import 'package:bloc_demo/src/authentication/domain/usecases/create_user.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';

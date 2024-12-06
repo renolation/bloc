@@ -1,4 +1,5 @@
 import 'package:bloc/bloc.dart';
+import 'package:bloc_demo/core/errors/failure.dart';
 import 'package:equatable/equatable.dart';
 
 import '../../domain/entities/user.dart';

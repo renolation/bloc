@@ -2,9 +2,9 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:bloc_test/core/utils/typedef.dart';
-import 'package:bloc_test/src/authentication/data/models/user_model.dart';
-import 'package:bloc_test/src/authentication/domain/entities/user.dart';
+import 'package:bloc_demo/core/utils/typedef.dart';
+import 'package:bloc_demo/src/authentication/data/models/user_model.dart';
+import 'package:bloc_demo/src/authentication/domain/entities/user.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import '../../../../fixtures/fixture_reader.dart';

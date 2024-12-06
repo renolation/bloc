@@ -32,7 +32,7 @@ class UsersLoaded extends AuthenticationState {
 }
 
 class AuthenticationError extends AuthenticationState {
-  final String  message;
+  final String message;
   const AuthenticationError(this.message);
   @override
   List<Object> get props => [message];

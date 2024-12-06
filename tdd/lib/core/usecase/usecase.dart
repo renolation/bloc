@@ -1,6 +1,6 @@
 
 
-import 'package:bloc_test/core/utils/typedef.dart';
+import 'package:bloc_demo/core/utils/typedef.dart';
 
 abstract class UseCaseWithParams<Type, Params> {
   const UseCaseWithParams();
