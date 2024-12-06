@@ -18,7 +18,7 @@ void main() {
 
   setUp(() {
     client = MockClient();
-    remoteDataSource = AuthRepoDataSrcImpl(client: client);
+    remoteDataSource = AuthRemoteDataSrcImpl(client: client);
     registerFallbackValue(Uri());
   });
 

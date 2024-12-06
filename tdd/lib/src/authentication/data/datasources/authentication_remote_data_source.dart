@@ -19,10 +19,10 @@ abstract class AuthenticationRemoteDataSource {
 const kCreateUserEndPoint = '/users';
 const kGetUserEndPoint = '/users';
 
-class AuthRepoDataSrcImpl implements AuthenticationRemoteDataSource {
+class AuthRemoteDataSrcImpl implements AuthenticationRemoteDataSource {
   final http.Client client;
 
-  const AuthRepoDataSrcImpl({required this.client});
+  const AuthRemoteDataSrcImpl({required this.client});
 
   @override
   Future<void> createUser(
