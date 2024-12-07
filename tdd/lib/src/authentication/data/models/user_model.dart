@@ -15,14 +15,14 @@ class UserModel extends User {
 
   const UserModel.empty()
    : this(
-    id: 1,
+    id: '1',
     createdAt: '',
     name: '',
     avatar: '',
   );
 
   UserModel copyWith({
-    int? id,
+    String? id,
     String? name,
     String? createdAt,
     String? avatar,
@@ -46,7 +46,7 @@ class UserModel extends User {
 
   factory UserModel.fromMap(DataMap map) {
     return UserModel(
-      id: map['id'] as int,
+      id: map['id'] as String,
       name: map['name'] as String,
       createdAt: map['createdAt'] as String,
       avatar: map['avatar'] as String,
