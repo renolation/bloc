@@ -1,5 +1,5 @@
 import 'package:bloc_reno/core/common/views/page_under_construction.dart';
-import 'package:bloc_reno/src/on_boarding/presentation/on_boarding_screen.dart';
+import 'package:bloc_reno/src/on_boarding/presentation/views/on_boarding_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
