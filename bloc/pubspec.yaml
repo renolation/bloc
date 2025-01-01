@@ -32,6 +32,7 @@ dependencies:
   swipe_to: ^1.0.6
   url_launcher: ^6.3.1
   chewie: ^1.8.5
+  mocktail: ^1.0.4
 
 dev_dependencies:
   flutter_test:
@@ -46,11 +47,12 @@ flutter:
   uses-material-design: true
 
   assets:
-    - assets/vectors
-    - assets/icons
-    - assets/fonts
-    - assets/images
-    - assets/lottie
+    - assets/
+    - assets/vectors/
+    - assets/icons/
+    - assets/fonts/
+    - assets/images/
+    - assets/lottie/
 
   
   
