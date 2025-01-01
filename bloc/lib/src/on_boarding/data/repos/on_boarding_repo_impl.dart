@@ -22,7 +22,12 @@ class OnBoardingRepoImpl implements OnBoardingRepo {
 
 
   @override
-  ResultFuture<bool> checkIfUserIsFirstTimer() {
-    throw UnimplementedError();
+  ResultFuture<bool> checkIfUserIsFirstTimer() async {
+    try {
+      await _localDataSource.checkIfUserIsFirstTimer();
+      return const Right(true);
+    } on CacheException catch(e) {
+      return Left(CacheFailure(message: e.message, statusCode: e.statusCode));
+    }
   }
 }

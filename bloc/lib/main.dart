@@ -1,10 +1,13 @@
 import 'package:bloc_reno/core/res/colours.dart';
 import 'package:bloc_reno/core/res/fonts.dart';
+import 'package:bloc_reno/core/services/injection_container.dart';
 import 'package:bloc_reno/core/services/router.dart';
 import 'package:flutter/material.dart';
 
 
-void main() {
+Future<void> main()  async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await init();
   runApp(const MyApp());
 }
 
