@@ -19,10 +19,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
+
       theme: ThemeData(
         colorScheme: ColorScheme.fromSwatch(
           accentColor: Colours.primaryColour,
         ),
+        scaffoldBackgroundColor: Colors.white,
         visualDensity: VisualDensity.adaptivePlatformDensity,
         fontFamily: Fonts.roboto,
         appBarTheme: const AppBarTheme(
