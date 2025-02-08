@@ -9,6 +9,10 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+import '../../../../core/services/injection_container.dart';
+import '../../../auth/presentation/bloc/auth_bloc.dart';
+import '../views/edit_profile_view.dart';
+
 class ProfileAppBar extends StatelessWidget implements PreferredSizeWidget {
   const ProfileAppBar({super.key});
 
@@ -23,8 +27,12 @@ class ProfileAppBar extends StatelessWidget implements PreferredSizeWidget {
             icon: const Icon(Icons.more_horiz),
             itemBuilder: (_) => [
                   PopupMenuItem<void>(
-                    // onTap: context.read<TabNavigator>().push(TabItem(child: Placeholder())),
-                    onTap: () => context.push(const Placeholder()),
+                    onTap: () => context.push(
+                      BlocProvider(
+                        create: (_) => sl<AuthBloc>(),
+                        child: const EditProfileView(),
+                      ),
+                    ),
                     child: const PopupItem(
                       title: 'Edit Profile',
                       icon: Icon(
