@@ -4,7 +4,7 @@ import 'package:bloc_reno/core/res/fonts.dart';
 import 'package:bloc_reno/core/services/injection_container.dart';
 import 'package:bloc_reno/core/services/router.dart';
 import 'package:bloc_reno/firebase_options.dart';
-import 'package:bloc_reno/src/dashboard/providers/dashboard_controller.dart';
+import 'package:bloc_reno/src/dashboard/presentation/providers/dashboard_controller.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:firebase_ui_auth/firebase_ui_auth.dart';
 import 'package:flutter/material.dart';

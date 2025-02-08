@@ -1,8 +1,10 @@
 import 'package:bloc_reno/core/common/app/providers/tab_navigator.dart';
+import 'package:bloc_reno/src/profile/presentation/views/profile_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
-import '../../../core/common/views/persistent_view.dart';
+import '../../../../core/common/views/persistent_view.dart';
+
 
 class DashboardController extends ChangeNotifier {
 
@@ -38,7 +40,7 @@ class DashboardController extends ChangeNotifier {
           child: const Placeholder(),
         ),
       ),
-      child: const PersistentView(),
+      child: const ProfileScreen(),
     ),
 
   ];

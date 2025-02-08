@@ -47,5 +47,13 @@ class LocalUser extends Equatable {
   List<Object?> get props => [
         uid,
         email,
+        bio,
+        profilePic,
+        points,
+        fullName,
+        groupIds.length,
+        enrolledCourseIds.length,
+        following.length,
+        followers.length,
       ];
 }

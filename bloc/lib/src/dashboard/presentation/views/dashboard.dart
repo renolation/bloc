@@ -1,8 +1,6 @@
 import 'package:bloc_reno/core/common/app/providers/user_provider.dart';
 import 'package:bloc_reno/core/common/views/persistent_view.dart';
 import 'package:bloc_reno/src/auth/data/models/user_model.dart';
-import 'package:bloc_reno/src/dashboard/providers/dashboard_controller.dart';
-import 'package:bloc_reno/src/dashboard/utils/dashboard_utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -10,6 +8,8 @@ import 'package:iconly/iconly.dart';
 import 'package:provider/provider.dart';
 
 import '../../../../core/res/colours.dart';
+import '../providers/dashboard_controller.dart';
+import '../utils/dashboard_utils.dart';
 
 
 class Dashboard extends StatefulWidget {
@@ -37,6 +37,7 @@ class _DashboardState extends State<Dashboard> {
       stream: DashboardUtils.userDataStream,
       builder: (_, snapshot) {
         if (snapshot.hasData && snapshot.data is LocalUserModel) {
+          print(snapshot.data);
           context.read<UserProvider>().user = snapshot.data;
         }
         return Consumer<DashboardController>(builder: (_, controller, __) {
